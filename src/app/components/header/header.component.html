@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-title class="ion-text-center">
+          <img src="../../../assets/textlogo.jpeg" />
+      </ion-title>
+      <!-- <ion-buttons *ngIf="isHideShowBachBtn">
+          <ion-button slot="start">
+              <ion-back-button color="light" defaultHref="home"></ion-back-button>
+            </ion-button>
+      </ion-buttons> -->
+
+  </ion-toolbar>
+  <ion-grid style="background-color: orange;">
+      <ion-row>
+          <ion-col *ngIf="isHideShowBachBtn">
+              <div class="pl-2">
+                  <i (click)="goToHome()" class="faBackBtn fa fa-arrow-left fa-1x"></i>&nbsp;
+              </div>
+          </ion-col>
+          <ion-col *ngIf="heading">
+              <ion-text color="light"><b> Dashboard</b></ion-text>
+          </ion-col>
+          <ion-col class="ion-text-end">
+              <ion-text color="light"><b>Username : {{lsOperator.operator_emp_name}}</b></ion-text>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-header>

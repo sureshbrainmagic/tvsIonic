@@ -1,0 +1,38 @@
+<app-header [isHideShowBachBtn]="true"></app-header>
+
+<ion-content>
+    <div>
+        <div class="p-2">
+            <ion-grid class="ion-no-padding">
+                <ion-row>
+                    <ion-col size="12">
+                        <input type="text" [(ngModel)]="searchTerm" placeholder="Search Stencil No" class="form-control">
+                    </ion-col>
+                    <!-- <ion-col size="2">
+                        <ion-button color="warning" size="small">
+                            <ion-icon color="light" name="search-outline"></ion-icon>
+                        </ion-button>
+                    </ion-col> -->
+                </ion-row>
+            </ion-grid>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead style="background-color: orange;">
+                    <tr class="info text-center">
+                        <td class="ion-text-nowrap text-light">TR.NO</td>
+                        <td class="ion-text-nowrap text-light">Test Name</td>
+                        <td class="ion-text-nowrap text-light">Tyre Size</td>
+                        <td class="ion-text-nowrap text-light">Stencil No </td>
+                    </tr>
+                </thead>
+                <tr *ngFor="let t of taskJson | filter: searchTerm">
+                    <td class="ion-text-nowrap">{{t.tr_no}}</td>
+                    <td class="ion-text-nowrap">{{t.Parameter}}</td>
+                    <td class="text-center">{{t.value_1}}</td>
+                    <td class="ion-text-nowrap">{{t.stencil_no}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</ion-content>

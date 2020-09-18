@@ -1,0 +1,24 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+      <ion-title class="ion-text-center">
+          <img src="../../../assets/textlogo.jpeg" />
+      </ion-title>
+      <!-- <ion-buttons *ngIf="isHideShowBachBtn">
+          <ion-button slot="start">
+              <ion-back-button color="light" defaultHref="home"></ion-back-button>
+            </ion-button>
+      </ion-buttons> -->
+  </ion-toolbar>
+  <ion-grid class="ion-no-padding pt-1" >
+      <ion-row>
+            <ion-col class="ion-text-end">
+             <ion-text color="dark"><b>Username : {{lsOperator.operator_emp_name}}</b></ion-text>
+          </ion-col>
+      </ion-row>
+      <ion-row style="background-color: orange;">
+          <ion-col size="12" class="ion-text-center">
+            <ion-text color="light"><b> {{heading | uppercase}}</b></ion-text>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-header>

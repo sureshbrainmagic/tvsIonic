@@ -1,5 +1,7 @@
 {
   "name": "tvsIonic",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
