@@ -29,6 +29,10 @@ const routes: Routes = [
     path: 'inlfateddimension',
     loadChildren: () => import('./test/inlfateddimension/inlfateddimension.module').then( m => m.InlfateddimensionPageModule)
   },
+  {
+    path: 'footprint',
+    loadChildren: () => import('./test/footprint/footprint.module').then( m => m.FootprintPageModule)
+  },
 ];
 
 @NgModule({
