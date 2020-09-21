@@ -1,0 +1,271 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>plunger</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <ion-grid class="myCustomBGColor">
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-text color="light">
+          <b>Plunger Test - HEADER</b></ion-text>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div class="p-2">
+    <ion-grid class="ion-no-padding">
+      <ion-row>
+        <ion-col class="pt-2" size="4">Test Request No</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-select value="123" placeholder="Select">
+            <ion-select-option value="123">123</ion-select-option>
+            <ion-select-option value="456">456</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Requesting Department</ion-col>
+        <ion-col class="pt-2" size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input class="customInput" placeholder="Enter Requesting Department"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Mould No</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Mould No"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Builder No</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Builder No"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Stencil No</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-select value="123" placeholder="Select">
+            <ion-select-option value="123">123</ion-select-option>
+            <ion-select-option value="456">456</ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Tyre Weight</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Tyre Weight"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Plunger Dia</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Plunger Dia"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Rim Used</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Rim Used"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col class="pt-2" size="4">Remarks</ion-col>
+        <ion-col size="1">:</ion-col>
+        <ion-col size="7">
+          <ion-item>
+            <ion-input placeholder="Enter Remarks"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+
+
+    </ion-grid>
+
+    <div class="row">
+      <div class="col-12 ion-text-right">
+        <ion-button fill="clear" color="warning">Completed</ion-button>
+        <ion-button fill="clear" color="warning">Exit</ion-button>
+      </div>
+    </div>
+
+
+    <div>
+
+      <ion-grid  class="myCustomBGColor">
+        <ion-row> 
+            <ion-col class="ion-text-center">
+                <ion-text color="light">
+                  <b>Plunger Test - DETAIL</b></ion-text>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+      <ion-grid class="ion-no-padding">
+        <ion-row>
+          <ion-col class="pt-2" size="4">Position</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+             <ion-item>
+               <ion-select value="1234">
+                 <ion-select-option value="1234">1234</ion-select-option>
+                 <ion-select-option value="1234">1234</ion-select-option>
+               </ion-select>
+             </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Initial (mm)</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Initial (mm)"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Diff(p)</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Diff(p)"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Final (mm)</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Final (mm)"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Distance Travelled</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Distance Travelled"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Tyre Circumference</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Tyre Circumference"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Force at Break(Kg)</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Force at Break(Kg)"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Breaking Energy(Joules)</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Breaking Energy(Joules)"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Finding/Nature of Failure</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Finding/Nature of Failure"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Minimum Required Strength</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Minimum Required Strength"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Average</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Average"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+
+        <ion-row>
+          <ion-col class="pt-2" size="4">Observed Valued in Joules</ion-col>
+          <ion-col size="1">:</ion-col>
+          <ion-col size="7">
+            <ion-item>
+              <ion-input placeholder="Enter Observed Valued in Joules"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+      <div class="row">
+        <div class="col-12 ion-text-right">
+          <ion-button fill="clear" color="warning" >Clear</ion-button>
+          <ion-button fill="clear" color="warning" >Save</ion-button>
+          <ion-button fill="clear" color="warning" >Exit</ion-button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</ion-content>

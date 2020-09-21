@@ -33,6 +33,10 @@ const routes: Routes = [
     path: 'footprint',
     loadChildren: () => import('./test/footprint/footprint.module').then( m => m.FootprintPageModule)
   },
+  {
+    path: 'plunger',
+    loadChildren: () => import('./test/plunger/plunger.module').then( m => m.PlungerPageModule)
+  },
 ];
 
 @NgModule({
